@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Listador de Tareas">
+    <meta name="author" content="Martín Perez">
+    <title>Lista de Tareas</title>
+    <link rel="icon" type="image/png" href="./assets/icon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans&family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/c4b76b6bec.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./base.css">
+  </head>
+  <body>
+    
+    <main>
+      <div class="mainCard">
+        <div class="clips">
+          <img src="./assets/clip.png" alt="" class="clip">
+          <img src="./assets/clip.png" alt="" class="clip">
+        </div>
+        <div class="title"><h1 class="titulo">Lista de Tareas</h1></div>
+        <div>
+          <form action="">
+            <input
+              type="text"
+              name="tarea"
+              placeholder="Nombre de la tarea"
+              class="inputForm"
+              autocomplete="off"
+              data-form-input
+            />
+            <button type="submit" class="btnCreate" data-form-btn>
+              Agregar <i class="fas fa-plus-circle"></i>
+            </button>
+          </form>
+        </div>
+        <ul class="cardsList" data-list>
+        </ul>
+        <div class="pie">
+          <p class="pie__p">Desarrollado por <a  class="pie__enlace" href="https://tinchogithub.github.io/Portafolio-Martin-Perez/" target="__blank">Martín Perez</a></p>
+        </div>
+      </div>
+
+    </main>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

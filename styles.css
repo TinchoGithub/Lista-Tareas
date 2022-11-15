@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Dosis', sans-serif;
+  font-size: 16px;
+}
+
+main {
+  background-image: url(./assets/fondo.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+form {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.mainCard {
+  width: 40vw;
+  background-color: #fff;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,.2),0 3px 1px 0 rgba(0,0,0,.12),0 2px 2px 0 rgba(0,0,0,.14);
+  padding: 0 25px 25px 25px;
+}
+
+.title {
+  font-family: 'Dosis', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 15px;
+  
+}
+
+.titulo{
+  font-size: 30px;
+  font-family: titulo;
+  color: var(--blue);
+}
+.clips{
+  display: flex;
+  justify-content: space-between;
+}
+
+.clip{
+  width: 50px;
+  height: auto;
+}
+
+.inputForm {
+  border: none;
+  padding: 10px;
+  border: 1px solid var(--green);
+  outline: none;
+  width: 65%;
+}
+
+.inputForm::placeholder {
+  padding: 0px;
+}
+
+.btnCreate {
+  padding: 10px 15px;
+  background: var(--green);
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btnCreate:hover{
+  background: var(--success);
+}
+
+.cardsList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  max-height: 60vh;
+  height: 60vh;
+}
+
+.card {
+  width: 90%;
+  padding: 15px;
+  box-shadow: 2px 4px 4px 4px rgba(71, 71, 71, 0.16);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  margin: 5px 0px;
+  position: relative;
+}
+
+.tarea {
+  padding: 10px;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: var(--green);
+}
+
+.completeIcon {
+  color: var(--success);
+}
+
+.trashIcon:hover {
+  color: var(--red);
+}
+
+.deleteConfirmationPop {
+  position: relative;
+  background-color: rgba(255, 255, 255);
+  z-index: 99;
+  width: 100%;
+  top: -100px;
+  left: 0;
+}
+.deleteSpace {
+  position: relative;
+  width: 30%;
+}
+
+.noTasks {
+  font-size: 48px;
+}
+
+.pie{
+  display:flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.pie__p{
+  font-size: 14px;
+  font-weight: bold;
+}
+.pie__enlace{
+  text-decoration: none;
+  font-family: titulo;
+  color: var(--blue);
+  font-size: 12px;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 430px){
+  
+  .clip{
+    width: 30px;
+  }
+
+  .titulo{
+    font-size: 18px;
+  }
+  
+  form{
+    flex-direction: column;
+  }
+
+  .inputForm{
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+  
+}
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+
+  .mainCard{
+    width: 80%;
+  }
+
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+  .mainCard{
+    width: 60%;
+  }
+ }
+ 
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+
+  .mainCard{
+    width: 40%;
+  }
+ }
+ 
