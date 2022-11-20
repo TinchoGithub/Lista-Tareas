@@ -14,7 +14,7 @@ import { leerTarea } from './leerTarea.js';
       const dateFormat = moment(date).format('DD/MM/YYYY');
 
       if(value == '' || dateFormat == ''){
-        alert('No puedes agregar una tarea vacía')
+        swal("Oops...!", "No se puede agregar una tarea vacía, por favor complete los campos", "warning");
         return
       }
 
