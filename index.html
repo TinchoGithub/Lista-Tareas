@@ -32,7 +32,8 @@
         <div class="title"><h1 class="titulo">Lista de Tareas</h1></div>
         <div>
           <form action="">
-            <input
+            <div class="input-container">
+              <input
               type="text"
               name="tarea"
               placeholder="Nombre de la tarea"
@@ -40,6 +41,8 @@
               autocomplete="off"
               data-form-input
             />
+            <input type="datetime-local" placeholder="YYYY/MM/DD" data-form-date >
+            </div>
             <button type="submit" class="btnCreate" data-form-btn>
               Agregar <i class="fas fa-plus-circle"></i>
             </button>
@@ -53,7 +56,8 @@
       </div>
 
     </main>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script type="module" src="script.js"></script>
   </body>
 </html>

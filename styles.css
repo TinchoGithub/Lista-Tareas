@@ -60,7 +60,8 @@ form {
   padding: 10px;
   border: 1px solid var(--green);
   outline: none;
-  width: 65%;
+  width: 75%;
+  margin-bottom: .5rem;
 }
 
 .inputForm::placeholder {
@@ -138,6 +139,11 @@ form {
 
 .noTasks {
   font-size: 48px;
+}
+
+.date{
+  width: 100%;
+  padding: 15px;
 }
 
 .pie{
